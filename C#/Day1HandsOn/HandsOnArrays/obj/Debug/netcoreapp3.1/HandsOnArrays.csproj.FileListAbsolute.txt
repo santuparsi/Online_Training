@@ -1,0 +1,13 @@
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\bin\Debug\netcoreapp3.1\HandsOnArrays.exe
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\bin\Debug\netcoreapp3.1\HandsOnArrays.deps.json
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\bin\Debug\netcoreapp3.1\HandsOnArrays.runtimeconfig.json
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\bin\Debug\netcoreapp3.1\HandsOnArrays.runtimeconfig.dev.json
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\bin\Debug\netcoreapp3.1\HandsOnArrays.dll
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\bin\Debug\netcoreapp3.1\HandsOnArrays.pdb
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\obj\Debug\netcoreapp3.1\HandsOnArrays.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\obj\Debug\netcoreapp3.1\HandsOnArrays.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\obj\Debug\netcoreapp3.1\HandsOnArrays.AssemblyInfo.cs
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\obj\Debug\netcoreapp3.1\HandsOnArrays.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\obj\Debug\netcoreapp3.1\HandsOnArrays.dll
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\obj\Debug\netcoreapp3.1\HandsOnArrays.pdb
+C:\OnlineBatch\C#\Day1HandsOn\HandsOnArrays\obj\Debug\netcoreapp3.1\HandsOnArrays.genruntimeconfig.cache

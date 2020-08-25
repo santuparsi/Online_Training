@@ -1,0 +1,13 @@
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\bin\Debug\netcoreapp3.1\DemoOnArrays.exe
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\bin\Debug\netcoreapp3.1\DemoOnArrays.deps.json
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\bin\Debug\netcoreapp3.1\DemoOnArrays.runtimeconfig.json
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\bin\Debug\netcoreapp3.1\DemoOnArrays.runtimeconfig.dev.json
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\bin\Debug\netcoreapp3.1\DemoOnArrays.dll
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\bin\Debug\netcoreapp3.1\DemoOnArrays.pdb
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\obj\Debug\netcoreapp3.1\DemoOnArrays.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\obj\Debug\netcoreapp3.1\DemoOnArrays.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\obj\Debug\netcoreapp3.1\DemoOnArrays.AssemblyInfo.cs
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\obj\Debug\netcoreapp3.1\DemoOnArrays.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\obj\Debug\netcoreapp3.1\DemoOnArrays.dll
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\obj\Debug\netcoreapp3.1\DemoOnArrays.pdb
+C:\OnlineBatch\C#\DemoOnArrays\DemoOnArrays\obj\Debug\netcoreapp3.1\DemoOnArrays.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\bin\Debug\netcoreapp3.1\HandsOnNonGenericCollections.exe
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\bin\Debug\netcoreapp3.1\HandsOnNonGenericCollections.deps.json
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\bin\Debug\netcoreapp3.1\HandsOnNonGenericCollections.runtimeconfig.json
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\bin\Debug\netcoreapp3.1\HandsOnNonGenericCollections.runtimeconfig.dev.json
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\bin\Debug\netcoreapp3.1\HandsOnNonGenericCollections.dll
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\bin\Debug\netcoreapp3.1\HandsOnNonGenericCollections.pdb
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\obj\Debug\netcoreapp3.1\HandsOnNonGenericCollections.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\obj\Debug\netcoreapp3.1\HandsOnNonGenericCollections.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\obj\Debug\netcoreapp3.1\HandsOnNonGenericCollections.AssemblyInfo.cs
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\obj\Debug\netcoreapp3.1\HandsOnNonGenericCollections.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\obj\Debug\netcoreapp3.1\HandsOnNonGenericCollections.dll
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\obj\Debug\netcoreapp3.1\HandsOnNonGenericCollections.pdb
+C:\OnlineBatch\C#\HandsOnNonGenericCollections\HandsOnNonGenericCollections\obj\Debug\netcoreapp3.1\HandsOnNonGenericCollections.genruntimeconfig.cache

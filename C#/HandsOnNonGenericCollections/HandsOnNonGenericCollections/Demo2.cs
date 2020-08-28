@@ -14,6 +14,11 @@ namespace HandsOnNonGenericCollections
 
     class Demo2
     {
+        public static List<Employee> GetEmployees()
+        {
+            //db functionalaity
+            return null;
+        }
         public static void GetEmployee(int id)
         {
             Employee e1 = new Employee();
@@ -65,12 +70,14 @@ namespace HandsOnNonGenericCollections
             //    Console.WriteLine("{0} {1} {2} {3}", item.eid, item.ename, item.joinDate, item.salary);
             //}
             List<Employee> list = new List<Employee>() { e1, e2, e3 };
+
             e = list[1];
             //foreach (Employee item in list)
             //{
             //    Console.WriteLine("{0} {1} {2} {3}", item.eid, item.ename, item.joinDate, item.salary);
             //}
             GetEmployee(109);
+            List<Employee> list1 = GetEmployees();
 
         }
     }

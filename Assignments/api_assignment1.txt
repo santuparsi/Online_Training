@@ -1,0 +1,4 @@
+Model-User(Name,Email,MobileNo,Uname,Password)
+UserRepository:
+GetAllUsers():List<User>
+GetUser(string Uname):User

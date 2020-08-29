@@ -7,11 +7,12 @@ namespace HandsOnAPIUsingModel.Repositrories
 {
     public class ProductRepository
     {
+        //inmomory data
         public static List<Product> products = new List<Product>()
         {
             new Product(){Pid=1,Pname="Soap",Price=15,Stock=100},
             new Product(){Pid=2,Pname="Bresh",Price=29,Stock=100},
-        }; //inmomory data
+        };
         //add new product details
         public void Add(Product item)
         {

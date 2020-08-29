@@ -24,13 +24,27 @@ namespace HandsOnAPIUsingModel.Controllers
             return Ok(list);
         }
         [Route("GetById/{id}")]
-        public IActionResult Get(int id)
+        [HttpGet]
+        public IActionResult FetchProductById(int id)
         {
             Product p = repo.Get(id);
             if (p != null)
                 return Ok(p);
             else
                 return Content("Invalid Id");
+        }
+        [HttpPost]
+        public IActionResult AddProduct(Product item)
+        {
+            try
+            {
+                repo.Add(item);
+                return Ok("Record Added");
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
     }
 }

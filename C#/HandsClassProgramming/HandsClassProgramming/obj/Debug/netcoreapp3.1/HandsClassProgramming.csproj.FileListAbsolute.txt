@@ -1,0 +1,13 @@
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\bin\Debug\netcoreapp3.1\HandsClassProgramming.exe
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\bin\Debug\netcoreapp3.1\HandsClassProgramming.deps.json
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\bin\Debug\netcoreapp3.1\HandsClassProgramming.runtimeconfig.json
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\bin\Debug\netcoreapp3.1\HandsClassProgramming.runtimeconfig.dev.json
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\bin\Debug\netcoreapp3.1\HandsClassProgramming.dll
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\bin\Debug\netcoreapp3.1\HandsClassProgramming.pdb
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\obj\Debug\netcoreapp3.1\HandsClassProgramming.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\obj\Debug\netcoreapp3.1\HandsClassProgramming.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\obj\Debug\netcoreapp3.1\HandsClassProgramming.AssemblyInfo.cs
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\obj\Debug\netcoreapp3.1\HandsClassProgramming.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\obj\Debug\netcoreapp3.1\HandsClassProgramming.dll
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\obj\Debug\netcoreapp3.1\HandsClassProgramming.pdb
+C:\OnlineBatch\C#\HandsClassProgramming\HandsClassProgramming\obj\Debug\netcoreapp3.1\HandsClassProgramming.genruntimeconfig.cache

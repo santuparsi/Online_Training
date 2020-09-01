@@ -1,0 +1,26 @@
+class members
+------------
+variables(class-varibles)
+methods(functions)
+constructors
+properties
+indexes
+events
+
+access specifiers
+-----------------
+public
+private
+protected
+internal
+protected internal
+
+Note: default access is internal for class
+default access specifier for class members is private
+
+constructors
+------------
+defined with in class
+constructors are invoke automatically when create object
+consturctors are using to initialize class object
+constructors are using to initialize class variables

@@ -1,0 +1,13 @@
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\bin\Debug\netcoreapp3.1\HandsOnClassProgramming-2.exe
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\bin\Debug\netcoreapp3.1\HandsOnClassProgramming-2.deps.json
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\bin\Debug\netcoreapp3.1\HandsOnClassProgramming-2.runtimeconfig.json
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\bin\Debug\netcoreapp3.1\HandsOnClassProgramming-2.runtimeconfig.dev.json
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\bin\Debug\netcoreapp3.1\HandsOnClassProgramming-2.dll
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\bin\Debug\netcoreapp3.1\HandsOnClassProgramming-2.pdb
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\obj\Debug\netcoreapp3.1\HandsOnClassProgramming-2.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\obj\Debug\netcoreapp3.1\HandsOnClassProgramming-2.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\obj\Debug\netcoreapp3.1\HandsOnClassProgramming-2.AssemblyInfo.cs
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\obj\Debug\netcoreapp3.1\HandsOnClassProgramming-2.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\obj\Debug\netcoreapp3.1\HandsOnClassProgramming-2.dll
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\obj\Debug\netcoreapp3.1\HandsOnClassProgramming-2.pdb
+C:\OnlineBatch\C#\HandsOnClassProgramming-2\HandsOnClassProgramming-2\obj\Debug\netcoreapp3.1\HandsOnClassProgramming-2.genruntimeconfig.cache

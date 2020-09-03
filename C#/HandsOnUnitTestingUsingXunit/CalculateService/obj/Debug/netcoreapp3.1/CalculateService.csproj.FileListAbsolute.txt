@@ -1,0 +1,9 @@
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\bin\Debug\netcoreapp3.1\CalculateService.deps.json
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\bin\Debug\netcoreapp3.1\CalculateService.dll
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\bin\Debug\netcoreapp3.1\CalculateService.pdb
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\obj\Debug\netcoreapp3.1\CalculateService.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\obj\Debug\netcoreapp3.1\CalculateService.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\obj\Debug\netcoreapp3.1\CalculateService.AssemblyInfo.cs
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\obj\Debug\netcoreapp3.1\CalculateService.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\obj\Debug\netcoreapp3.1\CalculateService.dll
+C:\OnlineBatch\C#\HandsOnUnitTestingUsingXunit\CalculateService\obj\Debug\netcoreapp3.1\CalculateService.pdb

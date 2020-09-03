@@ -1,0 +1,13 @@
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\bin\Debug\netcoreapp3.1\HandsOnInterfaces.exe
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\bin\Debug\netcoreapp3.1\HandsOnInterfaces.deps.json
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\bin\Debug\netcoreapp3.1\HandsOnInterfaces.runtimeconfig.json
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\bin\Debug\netcoreapp3.1\HandsOnInterfaces.runtimeconfig.dev.json
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\bin\Debug\netcoreapp3.1\HandsOnInterfaces.dll
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\bin\Debug\netcoreapp3.1\HandsOnInterfaces.pdb
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\obj\Debug\netcoreapp3.1\HandsOnInterfaces.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\obj\Debug\netcoreapp3.1\HandsOnInterfaces.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\obj\Debug\netcoreapp3.1\HandsOnInterfaces.AssemblyInfo.cs
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\obj\Debug\netcoreapp3.1\HandsOnInterfaces.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\obj\Debug\netcoreapp3.1\HandsOnInterfaces.dll
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\obj\Debug\netcoreapp3.1\HandsOnInterfaces.pdb
+C:\OnlineBatch\C#\HandsOnInterfaces\HandsOnInterfaces\obj\Debug\netcoreapp3.1\HandsOnInterfaces.genruntimeconfig.cache

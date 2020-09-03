@@ -13,6 +13,12 @@ namespace HandsOnClassProgramming_2
             set { pId = value; } //set value to privat variable
             get { return pId; } //get value from private variable
         }
+        public string PNAME
+        {
+            set { pName = value; }
+            get { return pName; }
+        }
+
         public void Show()
         {
             Console.WriteLine("PID: " + pId);
@@ -26,6 +32,7 @@ namespace HandsOnClassProgramming_2
         {
             Product obj = new Product();
             obj.PID = 101;
+            int k = obj.PID;
             obj.Show();
         }
     }

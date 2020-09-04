@@ -1,0 +1,13 @@
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\bin\Debug\netcoreapp3.1\HandsOnLinq.exe
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\bin\Debug\netcoreapp3.1\HandsOnLinq.deps.json
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\bin\Debug\netcoreapp3.1\HandsOnLinq.runtimeconfig.json
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\bin\Debug\netcoreapp3.1\HandsOnLinq.runtimeconfig.dev.json
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\bin\Debug\netcoreapp3.1\HandsOnLinq.dll
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\bin\Debug\netcoreapp3.1\HandsOnLinq.pdb
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\obj\Debug\netcoreapp3.1\HandsOnLinq.csprojAssemblyReference.cache
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\obj\Debug\netcoreapp3.1\HandsOnLinq.AssemblyInfoInputs.cache
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\obj\Debug\netcoreapp3.1\HandsOnLinq.AssemblyInfo.cs
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\obj\Debug\netcoreapp3.1\HandsOnLinq.csproj.CoreCompileInputs.cache
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\obj\Debug\netcoreapp3.1\HandsOnLinq.dll
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\obj\Debug\netcoreapp3.1\HandsOnLinq.pdb
+C:\OnlineBatch\C#\HandsOnLinq\HandsOnLinq\obj\Debug\netcoreapp3.1\HandsOnLinq.genruntimeconfig.cache

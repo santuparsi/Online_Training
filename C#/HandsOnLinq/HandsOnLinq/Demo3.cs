@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Net.WebSockets;
+
 namespace HandsOnLinq
 {
     class Employee
@@ -32,20 +34,27 @@ namespace HandsOnLinq
             };
             //fetch all employees
             var res = from i in list select i;
+            res = list.Select(e => e);
             //fetch all employee sorted by ename
             var res1 = from i in list orderby i.Ename select i;
+            var res11 = list.OrderBy(i => i.Ename).Select(i => i);
             //fetch employees who are working as programmer
             var res2 = from i in list where i.Desig == "Programmer" select i;
+            var res22 = list.Where(i => i.Desig == "Programmer").Select(i => i);
             //fetch employees working as teamleaders and salary>50000
             var res3 = from i in list where i.Desig == "TeamLeader" && i.Salary > 50000 select i;
+            var res33 = list.Where(i => i.Desig == "TeamLeader" && i.Salary > 50000);
             //fetch only Eid
             var res4 = from i in list select i.Eid;
+            var res44 = list.Where(i => i.Desig == "Programmer").Select(i => i.Eid);
             //fetech Eid,Ename
             var res5 = from i in list select new { i.Eid, i.Ename };
+            var res55 = list.Where(i => i.Salary > 12000).Select(i => new { i.Eid, i.Ename });
             foreach (var i in res5)
                 Console.WriteLine("{0} {1} ", i.Eid, i.Ename);
             var res6 = from i in list
                        group i by i.Desig;
+            var res66 = list.GroupBy(i => i.Desig);
             foreach(var i in res6)
             {
                 Console.WriteLine("Employees working as {0}: ", i.Key); //i.Key return Desig value

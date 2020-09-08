@@ -41,5 +41,39 @@ namespace EntityFrameworkDBFirst_Demo1.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        [Route("Add")]
+        public IActionResult Add(TblExclusions item)
+        {
+            try
+            {
+                using (DiscountPricingContext db = new DiscountPricingContext())
+                {
+                    db.TblExclusions.Add(item);//addig new record
+                    db.SaveChanges();
+                    return Ok();
+                }
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+        [Route("AddMany")]
+        public IActionResult AddMany(List<TblExclusions> list)
+        {
+            try
+            {
+                using (DiscountPricingContext db = new DiscountPricingContext())
+                {
+                    db.TblExclusions.AddRange(list);
+                    db.SaveChanges();
+                    return Ok();
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }

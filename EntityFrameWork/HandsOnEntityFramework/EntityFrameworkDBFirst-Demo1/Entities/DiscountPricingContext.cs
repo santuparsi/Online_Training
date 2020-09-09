@@ -16,7 +16,7 @@ namespace EntityFrameworkDBFirst_Demo1.Entities
         }
 
         public virtual DbSet<TblExclusions> TblExclusions { get; set; }
-        public virtual DbSet<TblNdcReorderGroup> TblNdcReorderGroup { get; set; }
+       
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -74,62 +74,7 @@ namespace EntityFrameworkDBFirst_Demo1.Entities
                     .HasComment("Author");
             });
 
-            modelBuilder.Entity<TblNdcReorderGroup>(entity =>
-            {
-                entity.HasKey(e => e.IntNdcReorderGroupId);
-
-                entity.ToTable("tblNdcReorderGroup");
-
-                entity.Property(e => e.IntNdcReorderGroupId)
-                    .HasColumnName("intNdcReorderGroupID")
-                    .HasComment("Ndc Reorder Group Key");
-
-                entity.Property(e => e.DtmCreatedDateTime)
-                    .HasColumnName("dtmCreatedDateTime")
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())")
-                    .HasComment("Created Date Time");
-
-                entity.Property(e => e.DtmUpdatedDateTime)
-                    .HasColumnName("dtmUpdatedDateTime")
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())")
-                    .HasComment("Updated Date Time");
-
-                entity.Property(e => e.IntDrugPriceTypeId)
-                    .HasColumnName("intDrugPriceTypeID")
-                    .HasComment("Drug Price Type");
-
-                entity.Property(e => e.StrCreatedBy)
-                    .HasColumnName("strCreatedBy")
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasDefaultValueSql("(user_name())")
-                    .HasComment("Created By");
-
-                entity.Property(e => e.StrDescription)
-                    .HasColumnName("strDescription")
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasComment("Description");
-
-                entity.Property(e => e.StrNote)
-                    .HasColumnName("strNote")
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasComment("Note");
-
-                entity.Property(e => e.StrUpdatedBy)
-                    .HasColumnName("strUpdatedBy")
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasDefaultValueSql("(user_name())")
-                    .HasComment("Updated By");
-
-                entity.Property(e => e.YnActive)
-                    .HasColumnName("ynActive")
-                    .HasComment("Active");
-            });
+          
 
             OnModelCreatingPartial(modelBuilder);
         }

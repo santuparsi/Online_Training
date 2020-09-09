@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EntityFrameworkDBFirst_Demo1.Entities
+namespace HandsOnEntityFrameworkUsingStoreProcedures.Models
 {
     public partial class TblNdcReorderGroup
     {

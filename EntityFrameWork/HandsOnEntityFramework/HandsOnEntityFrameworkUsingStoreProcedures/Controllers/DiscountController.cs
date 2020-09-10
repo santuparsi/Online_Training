@@ -30,5 +30,71 @@ namespace HandsOnEntityFrameworkUsingStoreProcedures.Controllers
                 return Ok(list);
             }
         }
+        [HttpPost]
+        [Route("Add/{StrDrugNdc}/{StrContractCode}")]
+        public IActionResult AddExculsions(string StrDrugNdc,string StrContractCode)
+        {
+           try
+            {
+                using (DiscountPricingContext db = new DiscountPricingContext())
+                {
+                    //db.Database.ExecuteSqlRaw("prcInsExclusions @p0,@p1",
+                    //    new[] { StrDrugNdc, StrContractCode });
+                    db.Database.ExecuteSqlRaw("prcInsExclusions @StrDrugNdc,@StrContractCode",
+                        new[] { new SqlParameter("@StrDrugNdc",StrDrugNdc),
+                                new SqlParameter("@StrContractCode",StrContractCode) 
+                        });
+                    return Ok("Record Added");
+                }
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+        [HttpPut]
+        [Route("Edit/{StrDrugNdc}/{StrContractCode}")]
+        public IActionResult UpdateExculsions(string StrDrugNdc, string StrContractCode)
+        {
+            try
+            {
+                using (DiscountPricingContext db = new DiscountPricingContext())
+                {
+                    //db.Database.ExecuteSqlRaw("prcInsExclusions @p0,@p1",
+                    //    new[] { StrDrugNdc, StrContractCode });
+                    db.Database.ExecuteSqlRaw("prcUpdExclusions @StrDrugNdc,@StrContractCode",
+                        new[] { new SqlParameter("@StrDrugNdc",StrDrugNdc),
+                                new SqlParameter("@StrContractCode",StrContractCode)
+                        });
+                    return Ok("Record Updated");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+        [HttpPut]
+        [Route("Delete/{StrDrugNdc}/{StrContractCode}")]
+        public IActionResult RemoveExculsions(string StrDrugNdc, string StrContractCode)
+        {
+            try
+            {
+                using (DiscountPricingContext db = new DiscountPricingContext())
+                {
+                    //db.Database.ExecuteSqlRaw("prcInsExclusions @p0,@p1",
+                    //    new[] { StrDrugNdc, StrContractCode });
+                    db.Database.ExecuteSqlRaw("prcDelExclusions @StrDrugNdc,@StrContractCode",
+                        new[] { new SqlParameter("@StrDrugNdc",StrDrugNdc),
+                                new SqlParameter("@StrContractCode",StrContractCode)
+                        });
+                    return Ok("Record Deleted");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }

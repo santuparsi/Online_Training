@@ -74,7 +74,7 @@ namespace HandsOnEntityFrameworkUsingStoreProcedures.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-        [HttpPut]
+        [HttpDelete]
         [Route("Delete/{StrDrugNdc}/{StrContractCode}")]
         public IActionResult RemoveExculsions(string StrDrugNdc, string StrContractCode)
         {

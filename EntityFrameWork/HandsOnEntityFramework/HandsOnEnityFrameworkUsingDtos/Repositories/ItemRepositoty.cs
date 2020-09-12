@@ -20,14 +20,14 @@ namespace HandsOnEnityFrameworkUsingDtos.Repositories
             context.SaveChanges();
         }
 
-        public void Delete(int id)
+        public void Delete(string id)
         {
             Items item = context.Items.Find(id);
             context.Items.Remove(item);
             context.SaveChanges();
         }
 
-        public Items Get(int id)
+        public Items Get(string id)
         {
             Items item = context.Items.Find(id);
             return item;

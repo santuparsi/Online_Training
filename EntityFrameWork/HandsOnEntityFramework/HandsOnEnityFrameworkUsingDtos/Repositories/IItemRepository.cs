@@ -8,9 +8,9 @@ namespace HandsOnEnityFrameworkUsingDtos.Repositories
     interface IItemRepository
     {
         List<Items> GetItems();
-        Items Get(int id);
+        Items Get(string id);
         void Add(Items obj);
         void Update(Items obj);
-        void Delete(int id);
+        void Delete(string id);
     }
 }

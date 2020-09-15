@@ -1,0 +1,21 @@
+﻿@model List<HandsOnMVCCoreUsingModels.Models.Item>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th><th>Name</th><th>Price</th><th>Stock</th>
+        </tr>
+        @foreach(var item in Model)
+		{
+        <tr>
+            <td>@item.ItemId</td>
+            <td>@item.ItemName</td>
+            <td>@item.Price</td>
+            <td>@item.Stock</td>
+        </tr>
+		}
+    </table>
+</div>

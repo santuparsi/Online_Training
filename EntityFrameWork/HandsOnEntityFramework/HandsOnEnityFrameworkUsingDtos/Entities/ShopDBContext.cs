@@ -17,6 +17,7 @@ namespace HandsOnEnityFrameworkUsingDtos.Entities
 
         public virtual DbSet<Items> Items { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<OrderItem> OrderItems { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -71,8 +72,14 @@ namespace HandsOnEnityFrameworkUsingDtos.Entities
                     .HasForeignKey(d => d.ItemId)
                     .HasConstraintName("FK__Orders__ItemId__276EDEB3");
             });
+            //set No Key for Orderitem
+            modelBuilder.Entity<OrderItem>(entity =>
+            {
+                entity.HasNoKey();
+                entity.ToTable("OrderItem");
+            });
 
-            OnModelCreatingPartial(modelBuilder);
+           OnModelCreatingPartial(modelBuilder);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

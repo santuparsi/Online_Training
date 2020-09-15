@@ -6,7 +6,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using HandsOnEnityFrameworkUsingDtos.Services;
 using HandsOnEnityFrameworkUsingDtos.DTOs;
+using HandsOnEnityFrameworkUsingDtos.Repositories;
 using AutoMapper;
+using HandsOnEnityFrameworkUsingDtos.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace HandsOnEnityFrameworkUsingDtos.Controllers
 {
@@ -18,6 +21,15 @@ namespace HandsOnEnityFrameworkUsingDtos.Controllers
         public ItemController(IMapper mapper)
         {
             service = new ItemService(mapper);
+        }
+        [Route("GetOrderItems")]
+        public IActionResult GetOrderItem()
+        {
+            using(ShopDBContext db=new ShopDBContext())
+            {
+                List<OrderItem> list = db.OrderItems.FromSqlRaw("prc_ItemOrder").ToList();
+                return Ok(list);
+            }
         }
      
         [HttpPost]
@@ -63,8 +75,15 @@ namespace HandsOnEnityFrameworkUsingDtos.Controllers
         {
             try
             {
-                service.Update(uItem);
-                return Ok("Record Updated");
+                if (service.GetById(uItem.ItemId) == null)
+                {
+                    return NotFound("Record Not Exisit");
+                }
+                else
+                {
+                    service.Update(uItem);
+                    return Ok("Record Updated");
+                }
             }
             catch(Exception ex)
             {

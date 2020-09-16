@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using HandsOnMVCCoreUsingModels.Models;
 using HandsOnMVCCoreUsingModels.Repositories;
+using Microsoft.AspNetCore.Routing;
+
 namespace HandsOnMVCCoreUsingModels.Controllers
 {
     [Route("[controller]")]
@@ -31,6 +33,20 @@ namespace HandsOnMVCCoreUsingModels.Controllers
             }
             else
                 return NotFound("Invalid Id");
+        }
+        [Route("Add")]
+        [HttpGet]
+       public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [Route("Add")]
+        public IActionResult Create(Item item)
+        {
+            _repo.Add(item);
+            // return RedirectToAction("GetAll"); //redirect to Index Action
+            return View();
         }
     }
 }

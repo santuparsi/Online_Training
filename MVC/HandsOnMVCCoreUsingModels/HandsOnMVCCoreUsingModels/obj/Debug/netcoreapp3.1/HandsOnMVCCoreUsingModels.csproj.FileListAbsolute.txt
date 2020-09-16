@@ -110,3 +110,4 @@ C:\OnlineBatch\MVC\HandsOnMVCCoreUsingModels\HandsOnMVCCoreUsingModels\obj\Debug
 C:\OnlineBatch\MVC\HandsOnMVCCoreUsingModels\HandsOnMVCCoreUsingModels\obj\Debug\netcoreapp3.1\HandsOnMVCCoreUsingModels.genruntimeconfig.cache
 C:\OnlineBatch\MVC\HandsOnMVCCoreUsingModels\HandsOnMVCCoreUsingModels\obj\Debug\netcoreapp3.1\Razor\Views\Item\GetItem.cshtml.g.cs
 C:\OnlineBatch\MVC\HandsOnMVCCoreUsingModels\HandsOnMVCCoreUsingModels\obj\Debug\netcoreapp3.1\Razor\Views\Item\Index.cshtml.g.cs
+C:\OnlineBatch\MVC\HandsOnMVCCoreUsingModels\HandsOnMVCCoreUsingModels\obj\Debug\netcoreapp3.1\Razor\Views\Item\Create.cshtml.g.cs

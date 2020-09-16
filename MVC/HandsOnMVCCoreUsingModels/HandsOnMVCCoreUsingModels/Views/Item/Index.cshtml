@@ -6,7 +6,7 @@
 <div class="container">
     <table class="table table-bordered">
         <tr>
-            <th>ID</th><th>Name</th><th>Price</th><th>Stock</th>
+            <th>ID</th><th>Name</th><th>Price</th><th>Stock</th><th></th>
         </tr>
         @foreach(var item in Model)
 		{
@@ -15,7 +15,9 @@
             <td>@item.ItemName</td>
             <td>@item.Price</td>
             <td>@item.Stock</td>
+            <td><a href="GetItem/@item.ItemId">ViewInfo</a></td>
         </tr>
 		}
     </table>
+    <a href="Add">Add New</a>
 </div>

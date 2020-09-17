@@ -1,0 +1,15 @@
+﻿@model HandsOnMVCCoreUsingModels.ViewModels.OrderItem
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<div class="container">
+    <pre>
+    OrderId:@Model.Order.OrderId
+    ItemName:@Model.Item.ItemName
+    Price:@Model.Item.Price
+    OrderDate:@Model.Order.OrderDate
+</pre>
+</div>

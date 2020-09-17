@@ -48,5 +48,6 @@ namespace HandsOnMVCCoreUsingModels.Controllers
             // return RedirectToAction("GetAll"); //redirect to Index Action
             return View();
         }
+       
     }
 }

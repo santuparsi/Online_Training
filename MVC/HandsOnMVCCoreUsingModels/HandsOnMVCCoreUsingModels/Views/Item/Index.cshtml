@@ -10,13 +10,14 @@
         </tr>
         @foreach(var item in Model)
 		{
-        <tr>
-            <td>@item.ItemId</td>
-            <td>@item.ItemName</td>
-            <td>@item.Price</td>
-            <td>@item.Stock</td>
-            <td><a href="GetItem/@item.ItemId">ViewInfo</a></td>
-        </tr>
+	<tr>
+		<td>@item.ItemId</td>
+		<td>@item.ItemName</td>
+		<td>@item.Price</td>
+		<td>@item.Stock</td>
+		@*<td><a href="GetItem/@item.ItemId">ViewInfo</a></td>*@
+		<td><a asp-action="GetItem" asp-route-Id="@item.ItemId">ViewInfo</a></td>
+	</tr>
 		}
     </table>
     <a href="Add">Add New</a>

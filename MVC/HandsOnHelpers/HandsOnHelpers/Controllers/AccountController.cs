@@ -37,9 +37,24 @@ namespace HandsOnHelpers.Controllers
         
         public IActionResult Add(User item)
         {
-            item.UserId = "U0001";
-            _Urepo.Add(item);
-            return RedirectToAction("Login");
+            
+            if (ModelState.IsValid)
+            {
+                item.UserId = "U0001";
+                _Urepo.Add(item);
+                return RedirectToAction("Login");
+            }
+            else
+            {
+                ViewData["country"] = new List<SelectListItem>()
+            {
+                new SelectListItem(){Text="",Value=""},
+                new SelectListItem(){Text="India",Value="India"},
+                new SelectListItem(){Text="US",Value="US"},
+                new SelectListItem(){Text="UK",Value="UK"},
+            };
+                return View("Create");
+            }
 
         }
         [HttpGet]
@@ -50,15 +65,18 @@ namespace HandsOnHelpers.Controllers
         [HttpPost]
         public IActionResult Login(Credentials credentials)
         {
-            Credentials item = _repo.Validate(credentials);
-            if(item!=null)
+            if (ModelState.IsValid)
             {
-                ViewBag.Error = "Valid User";
-                return RedirectToAction("Details");
-            }
-            else
-            {
-                ViewBag.Error = "Invalid User Credentials";
+                Credentials item = _repo.Validate(credentials);
+                if (item != null)
+                {
+                    ViewBag.Error = "Valid User";
+                    return RedirectToAction("Details");
+                }
+                else
+                {
+                    ViewBag.Error = "Invalid User Credentials";
+                }
             }
             return View();
         }

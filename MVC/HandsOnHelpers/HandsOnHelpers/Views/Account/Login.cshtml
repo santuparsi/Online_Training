@@ -10,11 +10,15 @@
 	<table class="table table-bordered" style="width:300px">
 		<tr>
 			<td>UserName</td>
-			<td>@Html.TextBoxFor(m => m.Uname)</td>
+			<td>@Html.TextBoxFor(m => m.Uname)
+			@Html.ValidationMessageFor(m=>m.Uname)
+			</td>
 		</tr>
 		<tr>
 			<td>Password</td>
-			<td>@Html.PasswordFor(m => m.Password)</td>
+			<td>@Html.PasswordFor(m => m.Password)
+			@Html.ValidationMessageFor(m=>m.Password)
+			</td>
 		</tr>
 		<tr>
 			<td colspan="2">

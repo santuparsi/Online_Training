@@ -1,0 +1,77 @@
+﻿@model HandsOnHelpers.Models.User
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<div class="container">
+    <form asp-action="Add" asp-controller="User">
+		<table class="table table-bordered">
+			<tr>
+				<td>ID</td>
+				<td><input asp-for="UserId" /></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input asp-for="Name" />
+				<span asp-validation-for="Name" class="text-danger"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					Male <input asp-for="Gender" type="radio" value="Male" />
+					FeMale <input asp-for="Gender" type="radio" value="FeMale" />
+				</td>
+			</tr>
+			<tr>
+				<td>DOB</td>
+				<td><input asp-for="DOB" />
+					<span asp-validation-for="DOB" class="text-danger"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input asp-for="Email" />
+					<span asp-validation-for="Email" class="text-danger"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td><input asp-for="Mobile" />
+					<span asp-validation-for="Mobile" class="text-danger"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td>
+					<select asp-for="Country" asp-items="((List<SelectListItem>)@ViewData["country"])">
+						<option value=""></option>
+					</select>
+					<span asp-validation-for="Country" class="text-danger"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td><input asp-for="Username" />
+					<span asp-validation-for="Username" class="text-danger"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input asp-for="Password" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input asp-for="ConfirmPassword" />
+					<span asp-validation-for="Password" class="text-danger"></span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Submit" />
+				</td>
+			</tr>
+		</table>
+    </form>
+</div>

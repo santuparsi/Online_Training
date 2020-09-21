@@ -1,0 +1,9 @@
+﻿@model HandsOnHelpers.Models.Credentials
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="container">
+    Welcome @*@Html.DisplayFor(m=>m.Uname)*@
+    <a asp-action="LogIn" asp-controller="Account">LogOut</a>
+</div>
+

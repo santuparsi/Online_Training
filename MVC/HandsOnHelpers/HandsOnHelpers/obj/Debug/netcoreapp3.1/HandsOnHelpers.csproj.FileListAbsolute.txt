@@ -110,3 +110,7 @@ C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\HandsOn
 C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\HandsOnHelpers.genruntimeconfig.cache
 C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\Razor\Views\Account\Create.cshtml.g.cs
+C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\Razor\Views\User\Create.cshtml.g.cs
+C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\Razor\Views\Account\Details.cshtml.g.cs
+C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\Razor\Views\Demo\Index.cshtml.g.cs
+C:\OnlineBatch\MVC\HandsOnHelpers\HandsOnHelpers\obj\Debug\netcoreapp3.1\Razor\Views\Demo\Create.cshtml.g.cs

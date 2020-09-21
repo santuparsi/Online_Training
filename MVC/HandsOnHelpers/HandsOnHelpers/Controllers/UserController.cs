@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using HandsOnHelpers.Models;
-using HandsOnHelpers.Repositories;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
+using HandsOnHelpers.Repositories;
+using HandsOnHelpers.Models;
 namespace HandsOnHelpers.Controllers
 {
-    public class AccountController : Controller
+    public class UserController : Controller
     {
-        private CredentialsRepository _repo;
         private UserRepository _Urepo;
-        public AccountController()
+        public UserController()
         {
-            _repo = new CredentialsRepository();
             _Urepo = new UserRepository();
         }
         public IActionResult Index()
@@ -34,13 +31,13 @@ namespace HandsOnHelpers.Controllers
             };
             return View();
         }
-        
+
         public IActionResult Add(User item)
         {
-            
+
             if (ModelState.IsValid)
             {
-                item.UserId = 100;
+                
                 _Urepo.Add(item);
                 return RedirectToAction("Login");
             }
@@ -48,7 +45,7 @@ namespace HandsOnHelpers.Controllers
             {
                 ViewData["country"] = new List<SelectListItem>()
             {
-                new SelectListItem(){Text="",Value=""},
+                
                 new SelectListItem(){Text="India",Value="India"},
                 new SelectListItem(){Text="US",Value="US"},
                 new SelectListItem(){Text="UK",Value="UK"},
@@ -56,33 +53,6 @@ namespace HandsOnHelpers.Controllers
                 return View("Create");
             }
 
-        }
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult Login(Credentials credentials)
-        {
-            if (ModelState.IsValid)
-            {
-                Credentials item = _repo.Validate(credentials);
-                if (item != null)
-                {
-                    ViewBag.Error = "Valid User";
-                    return View("Details",item);
-                }
-                else
-                {
-                    ViewBag.Error = "Invalid User Credentials";
-                }
-            }
-            return View();
-        }
-        public IActionResult Details(Credentials item)
-        {
-            return View(item);
         }
     }
 }

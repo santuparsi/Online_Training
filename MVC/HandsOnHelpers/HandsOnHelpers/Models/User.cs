@@ -8,12 +8,13 @@ namespace HandsOnHelpers.Models
 {
     public class User
     {
-        public string UserId { get; set; }
+        public int UserId { get; set; }
         [Required(ErrorMessage ="Pls Enter Name")]
         public string Name { get; set; }
         public string Gender { get; set; }
         [Required(ErrorMessage ="Pls Enter DOB")]
         [DOB(ErrorMessage ="Enter Correct DOB")]
+        [DataType(DataType.Date)]
         public DateTime DOB { get; set; }
         [Required(ErrorMessage ="Pls Enter EmailId")]
         [EmailAddress(ErrorMessage ="Pls Enter Valid EmailId")]
@@ -26,9 +27,11 @@ namespace HandsOnHelpers.Models
         public string Username { get; set; }
         [Required(ErrorMessage ="Pls Enter Password")]
         [RegularExpression("[a-zA-Z0-9]{8}",ErrorMessage ="Password should be 8 chars long")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         [Required(ErrorMessage ="Pls Enter Confirm Password")]
         [Compare("Password",ErrorMessage ="Password Mismatch")]
+        [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
 
     }

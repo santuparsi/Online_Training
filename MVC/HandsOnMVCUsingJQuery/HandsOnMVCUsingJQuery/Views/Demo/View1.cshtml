@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>View1</title>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#b1').click(function () {
+				alert("Hello JQuery")
+			})
+			$('#b2').click(function () {
+				let n = $('#t1').val();//return textbox t1 value
+				alert("Hello "+n)
+			})
+		})
+	</script>
+</head>
+<body>
+	<button id="b1">Click Me</button>
+	<input type="text" id="t1" />
+	<button id="b2">Greet</button>
+</body>
+</html>

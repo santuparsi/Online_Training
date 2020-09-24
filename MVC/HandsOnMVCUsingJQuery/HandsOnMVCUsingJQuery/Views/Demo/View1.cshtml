@@ -11,20 +11,30 @@
 	<title>View1</title>
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<script>
+		function f() {
+			alert("Hello JQuery")
+		}
 		$(document).ready(function () {
-			$('#b1').click(function () {
-				alert("Hello JQuery")
+			$('#b1').click(() => {
+				alert("Hi");
 			})
 			$('#b2').click(function () {
 				let n = $('#t1').val();//return textbox t1 value
-				alert("Hello "+n)
+				//alert("Hello "+n)
+				let msg = 'Hello ' + n;
+				$("#t2").val(msg);
 			})
+		})
+		let list = [12, 23, 45, 56, 67];
+		$.each(list, (i, v) => {
+			console.log(v)
 		})
 	</script>
 </head>
 <body>
 	<button id="b1">Click Me</button>
 	<input type="text" id="t1" />
+	<input type="text" id="t2" />
 	<button id="b2">Greet</button>
 </body>
 </html>

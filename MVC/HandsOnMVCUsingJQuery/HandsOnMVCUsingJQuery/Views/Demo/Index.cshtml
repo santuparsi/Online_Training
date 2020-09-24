@@ -1,7 +1,88 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
+@*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+@section Scripts{
+	<script>
+		$(document).ready(() => {
+			let obj = { name: 'Ram', age: 34, address: 'Banglore' };
+			$('#table_list').hide(); //hides table
+			console.log(obj);
+			$("#b1").click(() => {
+				$("#Name").val(obj.name)
+				$("#Age").val(obj.age)
+				$("#Address").val(obj.address)
+			})
+			$("#b2").click(() => {
+				let name=$("#Name").val()
+				let age=$("#Age").val()
+				let address = $("#Address").val()
+				obj = {
+					name: name,
+					age: age,
+					address: address
+				};
+				console.log(obj);
+				$("span").html('Success!!');
+			})
+			$("#list").click(() => {
+				$('#table_list').show() //shows the table
+				student_list = [
+					{ name: 'Rohan', age: 10, class: "III" },
+					{ name: 'Karan', age: 11, class: "IV" },
+					{ name: 'Suren', age: 10, class: "III" },
+					{ name: 'Ram', age: 11, class: "IV" },
+					{ name: 'Robert', age: 12, class: "V" },
+				];
+				$.each(student_list, (i, item) => {
+					let row = '<tr><td>' + item.name +
+						'</td><td>' + item.age +
+						'</td><td>' + item.class +
+						'</td></tr>';
+					$("#table_list").append(row);
+				})
+			})
 
+		})
+
+	</script>
+}
+	
 <h1>Index</h1>
+<div class="container">
+	<table class="table table-bordered">
+		<tr>
+			<td>Name</td>
+			<td>@Html.TextBox("Name")</td>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td>@Html.TextBox("Age")</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>@Html.TextBox("Address")</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button id="b1">Get</button>
+				<button id="b2">Add</button>
+				<button id="list">ViewAll</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<span class="text-info"></span>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="container">
+	<table class="table table-bordered" id="table_list">
+		<tr>
+			<th>Name</th><th>Age</th><th>Class</th>
+		</tr>
+	</table>
+</div>
 

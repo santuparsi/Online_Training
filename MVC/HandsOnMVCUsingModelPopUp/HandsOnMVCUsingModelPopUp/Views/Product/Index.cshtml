@@ -1,0 +1,300 @@
+﻿@model HandsOnMVCUsingModelPopUp.ManageProducts;
+@{
+	ViewData["Title"] = "Index";
+}
+
+<!-- Start: List Model-->
+<div id="listModel">
+	<div class="row">
+		<div class="col-md-12">
+			@if (TempData["message"] != null)
+			{
+				<div class="alert alert-primary">
+					@TempData["message"]
+				</div>
+			}
+			<div class="card">
+				<div class="box-header card-header">
+					<button type="button" class="btn btn-primary float-left pull-left" data-toggle="modal" data-target="#addProductModal">
+						Add Product
+					</button>
+					
+				</div>
+				<div class="box-body card-body">
+					<table id="manageProduct" class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">
+									@Html.DisplayNameFor(model => model.Products[0].ProductName)
+								</th>
+								<th scope="col">
+									@Html.DisplayNameFor(model => model.Products[0].Category)
+								</th>
+								<th scope="col">
+									@Html.DisplayNameFor(model => model.Products[0].Description)
+								</th>
+								<th scope="col">
+									@Html.DisplayNameFor(model => model.Products[0].UnitPrice)
+								</th>
+								<th scope="col">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach (var item in Model.Products)
+							{
+								<tr>
+									<td>
+										@Html.DisplayFor(modelItem => item.ProductName)
+									</td>
+									<td>
+										@Html.DisplayFor(modelItem => item.Category)
+									</td>
+									<td>
+										@Html.DisplayFor(modelItem => item.Description)
+									</td>
+									<td>
+										@Html.DisplayFor(modelItem => item.UnitPrice)
+									</td>
+									<td>
+										<a href="#editProductModal" class="edit" data-toggle="modal">Edit</a> |
+										<a href="#viewProductModal" class="view" data-toggle="modal">View</a> |
+										<a href="#deleteProductModal" class="delete" data-toggle="modal">Delete</a>
+										<input type="hidden" name="productID" id="productID" asp-for="@item.ProductId" />
+									</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End: List Model-->
+<!-- Start: Add Modal-->
+<div class="modal fade" id="addProductModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form method="post" asp-controller="Product" asp-action="AddProduct">
+				<div class="modal-header">
+					<h3 class="modal-title">Add New Product</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<div class="form-group">
+						<label asp-for="Product.ProductName" class="control-label"></label>
+						<input asp-for="Product.ProductName" class="form-control" />
+						<span asp-validation-for="Product.ProductName" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Product.Category" class="control-label"></label>
+						<input asp-for="Product.Category" class="form-control" />
+						<span asp-validation-for="Product.Category" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Product.Description" class="control-label"></label>
+						<input asp-for="Product.Description" class="form-control" />
+						<span asp-validation-for="Product.Description" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Product.UnitPrice" class="control-label"></label>
+						<input asp-for="Product.UnitPrice" class="form-control" />
+						<span asp-validation-for="Product.UnitPrice" class="text-danger"></span>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<input type="submit" value="Create" class="btn btn-success" />
+					<input type="button" value="Cancel" class="btn btn-primary" data-dismiss="modal" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- End: Add Modal-->
+<!-- Start: Edit Modal-->
+<div class="modal fade" id="editProductModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form method="post" asp-controller="Product" asp-action="UpdateProduct">
+				<div class="modal-header">
+					<h3 class="modal-title">Update Product</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<input type="hidden" asp-for="Product.ProductId" />
+					<div class="form-group">
+						<label asp-for="Product.ProductName" class="control-label"></label>
+						<input asp-for="Product.ProductName" class="form-control" />
+						<span asp-validation-for="Product.ProductName" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Product.Category" class="control-label"></label>
+						<input asp-for="Product.Category" class="form-control" />
+						<span asp-validation-for="Product.Category" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Product.Description" class="control-label"></label>
+						<input asp-for="Product.Description" class="form-control" />
+						<span asp-validation-for="Product.Description" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Product.UnitPrice" class="control-label"></label>
+						<input asp-for="Product.UnitPrice" class="form-control" />
+						<span asp-validation-for="Product.UnitPrice" class="text-danger"></span>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<input type="submit" value="Update" class="btn btn-success" />
+					<input type="button" value="Cancel" class="btn btn-primary" data-dismiss="modal" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- End: Edit Modal-->
+<!-- Start: View Modal-->
+<div class="modal fade" id="viewProductModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">View Product</h3>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="box box-primary">
+					<dl class="row">
+						<dt class="col-sm-6">
+							@Html.DisplayNameFor(model => model.Product.ProductName)
+						</dt>
+						<dd class="col-sm-6" id="Product_ProductName">
+						</dd>
+						<dt class="col-sm-6">
+							@Html.DisplayNameFor(model => model.Product.Category)
+						</dt>
+						<dd class="col-sm-6" id="Product_Category">
+						</dd>
+						<dt class="col-sm-6">
+							@Html.DisplayNameFor(model => model.Product.Description)
+						</dt>
+						<dd class="col-sm-6" id="Product_Description">
+						</dd>
+						<dt class="col-sm-6">
+							@Html.DisplayNameFor(model => model.Product.UnitPrice)
+						</dt>
+						<dd class="col-sm-6" id="Product_UnitPrice">
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<input type="button" value="Cancel" class="btn btn-primary" data-dismiss="modal" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End: View Modal-->
+<!-- Start: Delete Modal-->
+<div class="modal fade" id="deleteProductModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form method="post" asp-controller="Product" asp-action="DeleteProduct">
+				<div class="modal-header">
+					<h3 class="modal-title">Delete Product</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure you want to delete?</p>
+					<input type="hidden" name="productID" id="productID" />
+				</div>
+				<div class="modal-footer">
+					<input type="submit" value="Yes" class="btn btn-success" />
+					<input type="button" value="Cancel" class="btn btn-primary" data-dismiss="modal" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- End: Delete Modal-->
+@section Scripts {
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("table#manageProduct .delete").click(function () {
+				var productID = $(this).parent().find("#productID").val();
+				$("#deleteProductModal").find("#productID").val(productID);
+			});
+
+			$("table#manageProduct .edit").click(function () {
+				var productID = $(this).parent().find("#productID").val();
+				$("#editProductModal").find("#Product_ProductId").val(productID);
+				GetEditProductDetails(productID);
+			});
+
+			$("table#manageProduct .view").click(function () {
+				var productID = $(this).parent().find("#productID").val();
+				//$("#viewProductModal").find("#Product_ProductId").val(productID);
+				GetViewProductDetails(productID);
+			});
+		});
+
+		function GetEditProductDetails(productID) {
+			$.ajax({
+				url: "/Product/AjaxProductDetail",
+				type: "GET",
+				data: { "productID": "" + productID + "" },
+				contentType: "application/json;charset=UTF-8",
+				dataType: "json",
+				success: function (response) {
+					//alert(response);
+					$('#editProductModal #Product_ProductName').val(response.productName);
+					$('#editProductModal #Product_Category').val(response.category);
+					$('#editProductModal #Product_Description').val(response.description);
+					$('#editProductModal #Product_UnitPrice').val(response.unitPrice);
+				},
+				error: function (response) {
+					alert(response.responseText);
+					$('#editProductModal #Product_ProductName').val("");
+					$('#editProductModal #Product_Category').val("");
+					$('#editProductModal #Product_Description').val("");
+					$('#editProductModal #Product_UnitPrice').val("");
+				}
+			});
+			return false;
+		}
+		function GetViewProductDetails(productID) {
+			$.ajax({
+				url: "/Product/AjaxProductDetail",
+				typr: "GET",
+				data: { "productID": "" + productID + "" },
+				contentType: "application/json;charset=UTF-8",
+				dataType: "json",
+				success: function (response) {
+					//alert(response);
+					$('#viewProductModal #Product_ProductName').text(response.productName);
+					$('#viewProductModal #Product_Category').text(response.category);
+					$('#viewProductModal #Product_Description').text(response.description);
+					$('#viewProductModal #Product_UnitPrice').text(response.unitPrice);
+				},
+				error: function (response) {
+					alert(response.responseText);
+					$('#viewProductModal #Product_ProductName').text("");
+					$('#viewProductModal #Product_Category').text("");
+					$('#viewProductModal #Product_Description').text("");
+					$('#viewProductModal #Product_UnitPrice').text("");
+				}
+			});
+			return false;
+		}
+	</script>
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj": {}
+    "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj": {}
   },
   "projects": {
-    "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj": {
+    "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj",
+        "projectUniqueName": "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj",
         "projectName": "HandsOnMVCWithAPIUsingJqueryAjax",
-        "projectPath": "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj",
+        "projectPath": "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj",
         "packagesPath": "C:\\Users\\SANTHOSH\\.nuget\\packages\\",
-        "outputPath": "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\obj\\",
+        "outputPath": "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ntb/LjNSC0zRStvgQhju57S9fLZJbxcIEe0vvXLz7Sqy3VzS6kMaB3Ml4+h3QPBuQ4J5HkvudjXfLKte7ddrUw==",
+  "dgSpecHash": "3Voy6ainvwd7tXIh7kFXj9bQn/qwA7FY4RvDQ0zYe2CKA1D2Jn5HEtdxbrVKhgJozExBviZ00a4rPHWQKFnXQw==",
   "success": true,
-  "projectFilePath": "C:\\OnlineBatch\\MVC\\HandsOnHelpers\\HandsOnHelpers\\HandsOnHelpers.csproj",
+  "projectFilePath": "C:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnHelpers\\HandsOnHelpers\\HandsOnHelpers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SANTHOSH\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\SANTHOSH\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

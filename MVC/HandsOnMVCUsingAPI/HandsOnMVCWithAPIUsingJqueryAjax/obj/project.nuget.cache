@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0JlmxRFFnUt1VuFqWGycup0SgOHDrkZF+7tA+keI4NFxYBcIerI0QitpdGSWmC+iQ6g0c6Sp8tKm7fJW+uRcUg==",
+  "dgSpecHash": "bSGtjnGWbAYfFandagTM4co/A2SOedT+GV/uGdtKUDN6KC43n+0sTxrmr5AF325s2CC2W2PselJtaTlEOclW5w==",
   "success": true,
-  "projectFilePath": "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj",
+  "projectFilePath": "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnMVCWithAPIUsingJqueryAjax\\HandsOnMVCWithAPIUsingJqueryAjax.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SANTHOSH\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\SANTHOSH\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

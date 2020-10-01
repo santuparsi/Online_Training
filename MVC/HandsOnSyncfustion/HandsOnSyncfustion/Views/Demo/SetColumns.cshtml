@@ -1,0 +1,18 @@
+﻿@model List<HandsOnSyncfustion.Models.Products>
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div>
+	<ejs-grid id="grid" dataSource="Model">
+		<e-grid-columns>
+			<e-grid-column field="Pid" headerText="ID" width="120"></e-grid-column>
+			<e-grid-column field="Pname" headerText="Name" width="150"></e-grid-column>
+			<e-grid-column field="Price" headerText="Price" width="130"></e-grid-column>
+			<e-grid-column field="Stock" headerText="Stock" width="120"></e-grid-column>
+		</e-grid-columns>
+	</ejs-grid>
+</div>
+
+

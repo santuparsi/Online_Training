@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OnlineBatch\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj": {}
+    "D:\\OnlineBatch\\Dotnet-Batch-1\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj": {}
   },
   "projects": {
-    "C:\\OnlineBatch\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj": {
+    "D:\\OnlineBatch\\Dotnet-Batch-1\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OnlineBatch\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj",
+        "projectUniqueName": "D:\\OnlineBatch\\Dotnet-Batch-1\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj",
         "projectName": "HandsOnAPIWithEF",
-        "projectPath": "C:\\OnlineBatch\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj",
+        "projectPath": "D:\\OnlineBatch\\Dotnet-Batch-1\\API\\HandsOnAPIWithEF\\HandsOnAPIWithEF.csproj",
         "packagesPath": "C:\\Users\\SANTHOSH\\.nuget\\packages\\",
-        "outputPath": "C:\\OnlineBatch\\API\\HandsOnAPIWithEF\\obj\\",
+        "outputPath": "D:\\OnlineBatch\\Dotnet-Batch-1\\API\\HandsOnAPIWithEF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

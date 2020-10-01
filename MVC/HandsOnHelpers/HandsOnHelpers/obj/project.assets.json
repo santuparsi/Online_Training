@@ -6075,11 +6075,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OnlineBatch\\MVC\\HandsOnHelpers\\HandsOnHelpers\\HandsOnHelpers.csproj",
+      "projectUniqueName": "C:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnHelpers\\HandsOnHelpers\\HandsOnHelpers.csproj",
       "projectName": "HandsOnHelpers",
-      "projectPath": "C:\\OnlineBatch\\MVC\\HandsOnHelpers\\HandsOnHelpers\\HandsOnHelpers.csproj",
+      "projectPath": "C:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnHelpers\\HandsOnHelpers\\HandsOnHelpers.csproj",
       "packagesPath": "C:\\Users\\SANTHOSH\\.nuget\\packages\\",
-      "outputPath": "C:\\OnlineBatch\\MVC\\HandsOnHelpers\\HandsOnHelpers\\obj\\",
+      "outputPath": "C:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnHelpers\\HandsOnHelpers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

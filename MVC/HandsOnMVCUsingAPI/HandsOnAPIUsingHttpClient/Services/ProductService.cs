@@ -15,7 +15,7 @@ namespace HandsOnAPIUsingHttpClient.Services
         {
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:44365/");
+                client.BaseAddress = new Uri("https://mywebsite.com/");
                 var contentData = new StringContent(JsonConvert.SerializeObject(item),
                     System.Text.Encoding.UTF8, "application/json");
                 HttpResponseMessage response = client.PostAsync("api/Product/Add", contentData).Result;
@@ -27,7 +27,7 @@ namespace HandsOnAPIUsingHttpClient.Services
         {
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:44365/");
+                client.BaseAddress = new Uri("https://mywebsite.com/");
                 HttpResponseMessage response = client.DeleteAsync("api/Product/Delete/" + id).Result;
                 return response.Content.ReadAsStringAsync().Result;
             }
@@ -37,7 +37,7 @@ namespace HandsOnAPIUsingHttpClient.Services
         {
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:44365/");
+                client.BaseAddress = new Uri("https://mywebsite.com/");
                 MediaTypeWithQualityHeaderValue contentType = new MediaTypeWithQualityHeaderValue("application/json");
                 client.DefaultRequestHeaders.Accept.Add(contentType);
                 HttpResponseMessage response = client.GetAsync("api/Product/GetById/"+id).Result;
@@ -50,7 +50,7 @@ namespace HandsOnAPIUsingHttpClient.Services
         {
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:44365/");
+                client.BaseAddress = new Uri("https://mywebsite.com/");
                 MediaTypeWithQualityHeaderValue contentType = new MediaTypeWithQualityHeaderValue("application/json");
                 client.DefaultRequestHeaders.Accept.Add(contentType);
                 HttpResponseMessage response = client.GetAsync("api/Product/GetAll").Result;
@@ -63,7 +63,7 @@ namespace HandsOnAPIUsingHttpClient.Services
         {
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:44365/");
+                client.BaseAddress = new Uri("https://mywebsite.com/");
                 var contentData = new StringContent(JsonConvert.SerializeObject(item),
                     System.Text.Encoding.UTF8, "application/json");
                 HttpResponseMessage response = client.PutAsync("api/Product/Update", contentData).Result;

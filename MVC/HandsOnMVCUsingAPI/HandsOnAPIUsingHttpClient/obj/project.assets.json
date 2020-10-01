@@ -6077,11 +6077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnAPIUsingHttpClient\\HandsOnAPIUsingHttpClient.csproj",
+      "projectUniqueName": "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnAPIUsingHttpClient\\HandsOnAPIUsingHttpClient.csproj",
       "projectName": "HandsOnAPIUsingHttpClient",
-      "projectPath": "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnAPIUsingHttpClient\\HandsOnAPIUsingHttpClient.csproj",
+      "projectPath": "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnAPIUsingHttpClient\\HandsOnAPIUsingHttpClient.csproj",
       "packagesPath": "C:\\Users\\SANTHOSH\\.nuget\\packages\\",
-      "outputPath": "C:\\OnlineBatch\\MVC\\HandsOnMVCUsingAPI\\HandsOnAPIUsingHttpClient\\obj\\",
+      "outputPath": "D:\\OnlineBatch\\Dotnet-Batch-1\\MVC\\HandsOnMVCUsingAPI\\HandsOnAPIUsingHttpClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
